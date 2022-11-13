@@ -1,6 +1,6 @@
-Description: Terraform code to create a kubernetes cluster on aws with aws eks, autoscaling group and multiple other services.Architecture for aws can be found in InfrastructureArchitecture.JPG.
+Description: Terraform code to create a kubernetes cluster on aws with eks, autoscaling group and multiple other services. Architecture for aws can be found in InfrastructureArchitecture.JPG.
 
-Prequisite: Install Aws cli, configure aws acess from cli. Install terraform.
+Prequisite: Install Aws cli, configure aws cli acess locally. Install terraform. Install docker. Install kubectl.
 
 SourceCode taken from: https://github.com/hashicorp/terraform-provider-aws
 
