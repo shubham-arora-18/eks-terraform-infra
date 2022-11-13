@@ -10,7 +10,7 @@ Steps:
 2. Run command: terraform plan  .
 3. Run command: terraform apply  .
 4. Check aws configured account info with command: aws sts get-caller-identity   .
-5. To get access to aws infrastruture from local terminal run command: aws eks --region us-west-1 update-kubeconfig --name terraform-eks-demo
+5. To get access to aws infrastruture from local terminal run command: aws eks --region us-west-1 update-kubeconfig --name terraform-eks-demo   . (Note: this command already accounts for eks name and region used in terraform files. Change them if you change the terraform files.)
 6. cd to your local repository containing k8s files. Git repo for k8s files: https://github.com/shubham-arora-18/node-app-k8s
 7. Run command to deploy pod: kubectl apply -f .\node-web-app-deployment.yaml
 8. In node-web-app-service.yaml, change the port to 80. As we will want our service on eks to respond to http requests.
