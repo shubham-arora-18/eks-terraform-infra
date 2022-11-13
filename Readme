@@ -1,6 +1,6 @@
 Description: Terraform code to create a kubernetes cluster on aws with eks, autoscaling group and multiple other services. Architecture for aws can be found in InfrastructureArchitecture.JPG.
 
-Prequisite: Install Aws cli, configure aws cli acess locally. Install terraform. Install docker. Install kubectl.
+Prequisite: Install Aws cli, configure aws cli access locally. Install terraform. Install docker. Install kubectl.
 
 SourceCode taken from: https://github.com/hashicorp/terraform-provider-aws
 
@@ -20,3 +20,6 @@ Steps:
 11. To see the running service run: kubectl get svc   .
 12. Get the external ip of node-web-app-service (looks like: a61a1e53db3ae4623a679bc13729a274-1497645160.us-west-1.elb.amazonaws.com) . Run this URL in a browser and you are done.
 13. To destroy your terraform cluster run: terraform destroy   .
+
+Note:
+1. You can find the public ip of your service using nslookup a61a1e53db3ae4623a679bc13729a274-1497645160.us-west-1.elb.amazonaws.com. 
